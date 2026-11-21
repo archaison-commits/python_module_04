@@ -58,8 +58,8 @@ if __name__ == "__main__":
                         dest_file.close()
                     print(f"Data saved in file '{new_file}'.")
                 except OSError as e:
-                    sys.stderr.write(f"[STDERR] Error opening file '{new_file}': {e}\n"
-                                    f"Data not saved.\n")
+                    sys.stderr.write(f"[STDERR] Error opening file "
+                                     f"'{new_file}': {e}\nData not saved.\n")
                     sys.stderr.flush()
             else:
                 print("Not saving data.")
