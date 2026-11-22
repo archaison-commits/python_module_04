@@ -35,7 +35,6 @@ if __name__ == "__main__":
                     beg_line = 1
                 else:
                     file.write(char)
-
             print("\n---")
             print(f"File '{text}' closed.\n")
             print("Transform data:")
@@ -48,7 +47,7 @@ if __name__ == "__main__":
             file.close()
         except (FileNotFoundError, PermissionError) as e:
             print(f"Error opening file '{text}': {e}")
-        new_file = input("Enter new file name (o empty):")
+        new_file = input("Enter new file name (or empty):")
         try:
             transformed_file = open(text, "r")
             content: str = transformed_file.read()
